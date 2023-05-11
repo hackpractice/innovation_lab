@@ -19,4 +19,7 @@ sudo apt install gcc git wget python3 python3-dev python3-pip libssl-dev libffi-
 git clone https://github.com/pwndbg/pwndbg .pwndbg
 cd .pwndbg && ./setup.sh
 echo "export PATH=\"$PATH:/usr/local/lib/python3.10/dist-packages/bin\"" >> $HOME/.bashrc
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+cargo install ropr
 ```
